@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Register</title>
+        <h:outputStylesheet library="css" name="normalize.css"  />
+        <h:outputStylesheet library="css" name="style.css"  />
+    </h:head>
+    <h:body>
+        <p>This text is here even if nothing else works!</p>
+        <h:form class="register">
+            <div>
+                <h:outputLabel for="name"  value="Name:"/>
+                <h:inputText   id="name"   value="#{accountManager.inputName}"/>
+            </div>
+            <div>
+                <h:outputLabel for="surname"  value="Surname: "/>
+                <h:inputText   id="surname"   value="#{accountManager.inputSurname}"/>
+            </div>
+            <div>
+                <h:outputLabel for="ssn"      value="Ssn: "/>
+                <h:inputText   id="ssn"       value="#{accountManager.inputSsn}"/>
+            </div>
+            <div>
+                <h:outputLabel for="email"    value="Email: "/>
+                <h:inputText   id="email"     value="#{accountManager.inputEmail}"/>
+            </div>
+            <div>
+                <h:outputLabel for="password" value="Password: "/>
+                <h:inputText   id="password"  value="#{accountManager.inputPassword}"/>
+            </div>
+            <div>
+                <h:commandButton action="#{accountManager.doRegister()}" value="Register"/>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

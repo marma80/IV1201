@@ -1,0 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Feb-2015, 07:56:13
+    Author     : clindell
+*/
+body{width:80%;margin:4em auto;}
+.register label, .register input{display:table-cell;}
+.register input{margin:1em;}
+.register div {display:table-row;}
